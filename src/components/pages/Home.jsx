@@ -46,7 +46,7 @@ function Home() {
                     <p className="text-lg font-semibold text-gray-700 mb-4">Zomi Youth Development is part of a non-profit youth organization that aims to support and uplift the Zomi youths around the world.</p>
                     <p className="text-lg text-gray-700 mb-4">Our slogan is “Zomi Picing, Siamsin Picing!” Perfectly capturing the shared vision that our member body has.</p>
                     <Link to="/about-us">
-                        <Button className='text-sky-500'>Learn More About YD</Button>
+                        <Button className='bg-sky-500'>Learn More About YD</Button>
                     </Link>
                 </div>
             </div>
