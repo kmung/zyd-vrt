@@ -29,9 +29,9 @@ function Header() {
     return (
         <header className={`w-full fixed top-0 z-20 shadow-lg ${scrolled ? 'bg-gray-50 bg-opacity-85' : 'bg-gray-800 bg-opacity-55'} transition-colors duration-400`}>
             <div className='flex items-center justify-between px-6 py-3 relative'>
-                <div className='bg-white p-2 rounded-md shadow-md absolute -bottom-24 left-6 transform transition-transform duration-300 hover:scale-105'>
+                <div className='bg-white flex items-center p-2 rounded-md shadow-md absolute -bottom-24 left-6 transform transition-transform duration-300 hover:scale-105'>
                     <Link to='/'>
-                        <img id='logo' src={logoNoBg} alt='ZYD logo' className='h-40'/>
+                        <img id='logo' src={logoNoBg} alt='ZYD logo' className='h-16 md:h-24 lg:h-40 transition-transform duration-300'/>
                     </Link>
                 </div>
                 <div className='flex-1 md:hidden text-right'>
@@ -52,7 +52,7 @@ function Header() {
                     <Link to='/about-us' className={`px-4 py-2 rounded-md shadow-md hover:shadow-lg transform transition duration-300 hover:scale-105 ${scrolled ? 'bg-sky-800 text-white' : 'bg-white text-sky-800'}`}>About Us</Link>
                     <Link to='/what-we-do' className={`px-4 py-2 rounded-md shadow-md hover:shadow-lg transform transition duration-300 hover:scale-105 ${scrolled ? 'bg-sky-800 text-white' : 'bg-white text-sky-800'}`}>What We Do</Link>
                     <Link to='/contact-us' className={`px-4 py-2 rounded-md shadow-md hover:shadow-lg transform transition duration-300 hover:scale-105 ${scrolled ? 'bg-sky-800 text-white' : 'bg-white text-sky-800'}`}>Contact Us</Link>
-                    <Button>Donate</Button>
+                    <Link to='/donate' className={`px-4 py-2 rounded-md shadow-md hover:shadow-lg transform transition duration-300 hover:scale-105 ${scrolled ? 'bg-sky-800 text-white' : 'bg-white text-sky-800'}`}>Donate</Link>
                 </nav>
             </div>
             {menuOpen && (
