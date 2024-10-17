@@ -5,9 +5,16 @@ import AboutUsImg from '../../assets/img4.png';
 import ProgramImg from '../../assets/volunteers.jpg';
 import Button from '../Button';
 import { Link } from 'react-router-dom';
+import AnimateCounters from '../AnimateCounters';
 import DonateForm from '../DonateForm';
 
 function Home() {
+    const counters = [
+        { end: 100, text: 'YD Workforce' },
+        { end: 3, text: 'Countries Respresented' },
+        { end: 300, text: 'Outside Volunteers' }
+    ];
+
     const scrollToNextSection = () => {
         document.getElementById('video-section').scrollIntoView({ behavior: 'smooth' });
     };
@@ -39,6 +46,7 @@ function Home() {
                 <VideoBox src='https://www.youtube.com/embed/PLuHDYufJRM?si=VeGebn5-6uru1Ns5' title='YD Theme Song' />
             </div>
         </section>
+        <AnimateCounters counters={counters} />
         <section className="bg-white py-8">
             <div className="max-w-6xl mx-auto px-4 grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
                 <div>
