@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 import logoNoBg from '../assets/yd_logo-removebg.png';
+import Button from './Button';
 
 function Header() {
     const [scrolled, setScrolled] = useState(false);
@@ -26,11 +27,11 @@ function Header() {
     };
 
     return (
-        <header className={`w-full fixed top-0 z-20 shadow-md ${scrolled ? 'bg-gray-800 bg-opacity-85' : 'bg-gray-800 bg-opacity-35'} transition-colors duration-400`}>
+        <header className={`w-full fixed top-0 z-20 shadow-lg ${scrolled ? 'bg-gray-50 bg-opacity-85' : 'bg-gray-800 bg-opacity-55'} transition-colors duration-400`}>
             <div className='flex items-center justify-between px-6 py-3 relative'>
-                <div className='bg-white p-2 rounded-md shadow-md absolute -bottom-12 left-6'>
+                <div className='bg-white p-2 rounded-md shadow-md absolute -bottom-24 left-6 transform transition-transform duration-300 hover:scale-105'>
                     <Link to='/'>
-                        <img id='logo' src={logoNoBg} alt='ZYD logo' className='h-24'/>
+                        <img id='logo' src={logoNoBg} alt='ZYD logo' className='h-40'/>
                     </Link>
                 </div>
                 <div className='flex-1 md:hidden text-right'>
@@ -46,19 +47,21 @@ function Header() {
                         )}
                     </button>
                 </div>
-                <nav className={`hidden md:flex space-x-4 ml-auto ${scrolled ? 'text-white' : 'text-sky-950'}`}>
-                    <Link to='/' className='px-4 py-2 shadow-md hover:shadow-lg transform transition duration-300 hover:scale-105'>Home</Link>
-                    <Link to='/about-us' className='px-4 py-2 shadow-md hover:shadow-lg transform transition duration-300 hover:scale-105'>About Us</Link>
-                    <Link to='/what-we-do' className='px-4 py-2 shadow-md hover:shadow-lg transform transition duration-300 hover:scale-105'>What We Do</Link>
-                    <Link to='/contact-us' className='px-4 py-2 shadow-md hover:shadow-lg transform transition duration-300 hover:scale-105'>Contact Us</Link>
+                <nav className={`hidden md:flex space-x-4 ml-auto ${scrolled ? 'text-white' : 'text-sky-800'}`}>
+                    <Link to='/' className={`px-4 py-2 rounded-md shadow-md hover:shadow-lg transform transition duration-300 hover:scale-105 ${scrolled ? 'bg-sky-800 text-white' : 'bg-white text-sky-800'}`}>Home</Link>
+                    <Link to='/about-us' className={`px-4 py-2 rounded-md shadow-md hover:shadow-lg transform transition duration-300 hover:scale-105 ${scrolled ? 'bg-sky-800 text-white' : 'bg-white text-sky-800'}`}>About Us</Link>
+                    <Link to='/what-we-do' className={`px-4 py-2 rounded-md shadow-md hover:shadow-lg transform transition duration-300 hover:scale-105 ${scrolled ? 'bg-sky-800 text-white' : 'bg-white text-sky-800'}`}>What We Do</Link>
+                    <Link to='/contact-us' className={`px-4 py-2 rounded-md shadow-md hover:shadow-lg transform transition duration-300 hover:scale-105 ${scrolled ? 'bg-sky-800 text-white' : 'bg-white text-sky-800'}`}>Contact Us</Link>
+                    <Button>Donate</Button>
                 </nav>
             </div>
             {menuOpen && (
                 <div className='md:hidden flex flex-col items-center space-y-4 p-4 bg-gray-800'>
-                    <Link to='/' onClick={toggleMenu} className={`px-4 py-2 shadow-md hover:shadow-lg transform transition duration-300 hover:scale-105 ${scrolled ? 'text-white' : 'text-blue-900'}`}>Home</Link>
-                    <Link to='/about-us' onClick={toggleMenu} className={`px-4 py-2 shadow-md hover:shadow-lg transform transition duration-300 hover:scale-105 ${scrolled ? 'text-white' : 'text-blue-900'}`}>About Us</Link>
-                    <Link to='/what-we-do' onClick={toggleMenu} className={`px-4 py-2 shadow-md hover:shadow-lg transform transition duration-300 hover:scale-105 ${scrolled ? 'text-white' : 'text-blue-900'}`}>What We Do</Link>
-                    <Link to='/contact-us' onClick={toggleMenu} className={`px-4 py-2 shadow-md hover:shadow-lg transform transition duration-300 hover:scale-105 ${scrolled ? 'text-white' : 'text-blue-900'}`}>Contact Us</Link>
+                    <Link to='/' onClick={toggleMenu} className={`px-4 py-2 rounded-md shadow-md hover:shadow-lg transform transition duration-300 hover:scale-105 ${scrolled ? 'bg-sky-800 text-white' : 'bg-white text-sky-800'}`}>Home</Link>
+                    <Link to='/about-us' onClick={toggleMenu} className={`px-4 py-2 rounded-md shadow-md hover:shadow-lg transform transition duration-300 hover:scale-105 ${scrolled ? 'bg-sky-800 text-white' : 'bg-white text-sky-800'}`}>About Us</Link>
+                    <Link to='/what-we-do' onClick={toggleMenu} className={`px-4 py-2 rounded-md shadow-md hover:shadow-lg transform transition duration-300 hover:scale-105 ${scrolled ? 'bg-sky-800 text-white' : 'bg-white text-sky-800'}`}>What We Do</Link>
+                    <Link to='/contact-us' onClick={toggleMenu} className={`px-4 py-2 rounded-md shadow-md hover:shadow-lg transform transition duration-300 hover:scale-105 ${scrolled ? 'bg-sky-800 text-white' : 'bg-white text-sky-800'}`}>Contact Us</Link>
+                    <Button onClick={toggleMenu}>Donate</Button>
                 </div>
             )}
         </header>

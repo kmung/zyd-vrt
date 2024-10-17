@@ -5,7 +5,7 @@ function Footer() {
     return (
         <footer className='bg-gray-800 text-white py-4 flex justify-center items-center space-x-2'>
             <p>©2024 
-                <Link to='/' className='text-blue-400 hover:text-blue-600'> Zomi YD</Link>
+                <Link to='/' className='text-blue-400 hover:text-blue-600'> Zomi YD</Link>.&nbsp;All Rights Reserved.
             </p>
             <span> | </span>
             <p>
