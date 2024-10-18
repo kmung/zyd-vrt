@@ -28,8 +28,8 @@ function Header() {
 
     return (
         <header className={`w-full fixed top-0 z-20 shadow-lg ${scrolled ? 'bg-blue-secondary bg-opacity-85' : 'bg-blue-secondary bg-opacity-15'} transition-colors duration-400`}>
-            <div className='flex items-center justify-between px-6 py-3 relative'>
-                <div className='bg-white flex items-center p-2 rounded-md shadow-md absolute -bottom-24 left-6 transform transition-transform duration-300 hover:scale-105'>
+            <div className='flex items-center justify-between px-6 py-3'>
+                <div className='bg-white flex items-center p-2 rounded-md shadow-md relative lg:absolute lg:-bottom-24 lg:left-6 transform transition-transform duration-300 hover:scale-105'>
                     <Link to='/'>
                         <img id='logo' src={logoNoBg} alt='ZYD logo' className='h-16 md:h-24 lg:h-40 transition-transform duration-300'/>
                     </Link>
@@ -55,11 +55,13 @@ function Header() {
                 </nav>
             </div>
             {menuOpen && (
-                <div className='md:hidden flex flex-col items-center space-y-4 p-4 bg-gray-800'>
-                    <Link to='/' onClick={toggleMenu} className={`px-4 py-2 rounded-md shadow-md hover:shadow-lg transform transition duration-300 hover:scale-105 ${scrolled ? 'bg-sky-800 text-white' : 'bg-white text-sky-800'}`}>Home</Link>
-                    <Link to='/about-us' onClick={toggleMenu} className={`px-4 py-2 rounded-md shadow-md hover:shadow-lg transform transition duration-300 hover:scale-105 ${scrolled ? 'bg-sky-800 text-white' : 'bg-white text-sky-800'}`}>About Us</Link>
-                    <Link to='/what-we-do' onClick={toggleMenu} className={`px-4 py-2 rounded-md shadow-md hover:shadow-lg transform transition duration-300 hover:scale-105 ${scrolled ? 'bg-sky-800 text-white' : 'bg-white text-sky-800'}`}>What We Do</Link>
-                    <Link to='/contact-us' onClick={toggleMenu} className={`px-4 py-2 rounded-md shadow-md hover:shadow-lg transform transition duration-300 hover:scale-105 ${scrolled ? 'bg-sky-800 text-white' : 'bg-white text-sky-800'}`}>Contact Us</Link>
+                <div className='md:hidden bg-blue-primary'>
+                    <nav className='flex flex-col space-y-2 p-4 items-center'>
+                        <Link to='/' onClick={toggleMenu} className={`px-4 py-2 rounded-md shadow-md hover:shadow-lg transform transition duration-300 hover:scale-105 ${scrolled ? 'bg-sky-800 text-white' : 'bg-white text-sky-800'}`}>Home</Link>
+                        <Link to='/about-us' onClick={toggleMenu} className={`px-4 py-2 rounded-md shadow-md hover:shadow-lg transform transition duration-300 hover:scale-105 ${scrolled ? 'bg-sky-800 text-white' : 'bg-white text-sky-800'}`}>About Us</Link>
+                        <Link to='/what-we-do' onClick={toggleMenu} className={`px-4 py-2 rounded-md shadow-md hover:shadow-lg transform transition duration-300 hover:scale-105 ${scrolled ? 'bg-sky-800 text-white' : 'bg-white text-sky-800'}`}>What We Do</Link>
+                        <Link to='/contact-us' onClick={toggleMenu} className={`px-4 py-2 rounded-md shadow-md hover:shadow-lg transform transition duration-300 hover:scale-105 ${scrolled ? 'bg-sky-800 text-white' : 'bg-white text-sky-800'}`}>Contact Us</Link>
+                    </nav>
                 </div>
             )}
         </header>
