@@ -112,7 +112,7 @@ function DonateForm() {
                 </div>
                 <button
                     type="submit"
-                    className="w-full bg-blue-500 text-white px-3 py-2 rounded-md hover:bg-blue-600"
+                    className="w-full bg-blue-primary text-white px-3 py-2 rounded-md hover:bg-blue-secondary"
                 >
                     Donate
                 </button>

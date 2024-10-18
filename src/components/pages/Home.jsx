@@ -35,20 +35,20 @@ function Home() {
                     <Button>Give</Button>
                 </Link>
             </div>
-            <button onClick={scrollToNextSection} className="absolute bottom-10 animate-bounce shadow-lg text-white focus:outline-none border-2 border-white bg-sky-500 rounded-full p-2">
+            <button onClick={scrollToNextSection} className="absolute bottom-10 animate-bounce shadow-lg text-white focus:outline-none bg-blue-secondary rounded-full p-2">
                 <svg className="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M19 9l-7 7-7-7"></path>
                 </svg>
             </button>
         </div>
-        <section id="video-section" className='bg-gray-800 py-8'>
-            <div className='container mx-auto'>
+        <section id="video-section" className='py-8'>
+            <div className='container mx-auto bg-yellow-secondary'>
                 <VideoBox src='https://www.youtube.com/embed/PLuHDYufJRM?si=VeGebn5-6uru1Ns5' title='YD Theme Song' />
             </div>
         </section>
         <AnimateCounters counters={counters} />
-        <section className="bg-white py-8">
-            <div className="max-w-6xl mx-auto px-4 grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+        <section className="bg-blue-secondary text-white py-8">
+            <div className="max-w-6xl mx-auto px-4 grid grid-cols-1 md:grid-cols-2 gap-8 items-center ">
                 <div>
                     <img src={AboutUsImg} alt="About Us" className="w-full h-auto rounded-lg shadow-md"/>
                 </div>

@@ -27,7 +27,7 @@ function Header() {
     };
 
     return (
-        <header className={`w-full fixed top-0 z-20 shadow-lg ${scrolled ? 'bg-gray-50 bg-opacity-85' : 'bg-gray-800 bg-opacity-55'} transition-colors duration-400`}>
+        <header className={`w-full fixed top-0 z-20 shadow-lg ${scrolled ? 'bg-blue-secondary bg-opacity-85' : 'bg-blue-secondary bg-opacity-15'} transition-colors duration-400`}>
             <div className='flex items-center justify-between px-6 py-3 relative'>
                 <div className='bg-white flex items-center p-2 rounded-md shadow-md absolute -bottom-24 left-6 transform transition-transform duration-300 hover:scale-105'>
                     <Link to='/'>
@@ -47,12 +47,12 @@ function Header() {
                         )}
                     </button>
                 </div>
-                <nav className={`hidden md:flex space-x-4 ml-auto ${scrolled ? 'text-white' : 'text-sky-800'}`}>
-                    <Link to='/' className={`px-4 py-2 rounded-md shadow-md hover:shadow-lg transform transition duration-300 hover:scale-105 ${scrolled ? 'bg-sky-800 text-white' : 'bg-white text-sky-800'}`}>Home</Link>
-                    <Link to='/about-us' className={`px-4 py-2 rounded-md shadow-md hover:shadow-lg transform transition duration-300 hover:scale-105 ${scrolled ? 'bg-sky-800 text-white' : 'bg-white text-sky-800'}`}>About Us</Link>
-                    <Link to='/what-we-do' className={`px-4 py-2 rounded-md shadow-md hover:shadow-lg transform transition duration-300 hover:scale-105 ${scrolled ? 'bg-sky-800 text-white' : 'bg-white text-sky-800'}`}>What We Do</Link>
-                    <Link to='/contact-us' className={`px-4 py-2 rounded-md shadow-md hover:shadow-lg transform transition duration-300 hover:scale-105 ${scrolled ? 'bg-sky-800 text-white' : 'bg-white text-sky-800'}`}>Contact Us</Link>
-                    <Link to='/donate' className={`px-4 py-2 rounded-md shadow-md hover:shadow-lg transform transition duration-300 hover:scale-105 ${scrolled ? 'bg-sky-800 text-white' : 'bg-white text-sky-800'}`}>Donate</Link>
+                <nav className={`hidden md:flex space-x-4 ml-auto`}>
+                    <Link to='/' className={`px-4 py-2 rounded-md shadow-md hover:shadow-lg transform transition duration-300 hover:scale-105 ${scrolled ? 'bg-white text-blue-primary' : 'bg-blue-primary text-white'}`}>Home</Link>
+                    <Link to='/about-us' className={`px-4 py-2 rounded-md shadow-md hover:shadow-lg transform transition duration-300 hover:scale-105 ${scrolled ? 'bg-white text-blue-primary' : 'bg-blue-primary text-white'}`}>About Us</Link>
+                    <Link to='/what-we-do' className={`px-4 py-2 rounded-md shadow-md hover:shadow-lg transform transition duration-300 hover:scale-105 ${scrolled ? 'bg-white text-blue-primary' : 'bg-blue-primary text-white'}`}>What We Do</Link>
+                    <Link to='/contact-us' className={`px-4 py-2 rounded-md shadow-md hover:shadow-lg transform transition duration-300 hover:scale-105 ${scrolled ? 'bg-white text-blue-primary' : 'bg-blue-primary text-white'}`}>Contact Us</Link>
+                    <Link to='/donate' className={`px-4 py-2 rounded-md shadow-md hover:shadow-lg transform transition duration-300 hover:scale-105 ${scrolled ? 'bg-white text-blue-primary' : 'bg-blue-primary text-white'}`}>Donate</Link>
                 </nav>
             </div>
             {menuOpen && (

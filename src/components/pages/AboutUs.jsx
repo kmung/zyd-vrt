@@ -52,7 +52,7 @@ function AboutUs() {
           <p className="text-lg text-gray-700 mb-4">Our work focuses on the holistic development of Zomi youths scattered across the globe due to the Zomi Diaspora. We exist to empower each other and to be the vehicle that drives the positive development of Zomi communities.</p>
         </div>
       </section>
-      <section className="py-8 bg-gray-100">
+      <section className="my-6 py-8 bg-yellow-secondary text-white">
         <div className='max-w-4xl mx-auto px-4 grid grid-cols-1 md:grid-cols-2 gap-8'>
           <div>
             <h1 className="text-3xl font-bold mb-4">Our Mission</h1>
@@ -81,7 +81,7 @@ function AboutUs() {
           </div>
         </div>
       </section>
-      <section className="py-8 bg-white">
+      <section className="my-6 py-8 bg-yellow-primary text-white">
         <div className='max-w-4xl mx-auto px-4 grid grid-cols-1 md:grid-cols-2 gap-8'>
           <div>
             <img src={visionImage} alt="Vision" className="w-full h-auto rounded-lg shadow-md"/>

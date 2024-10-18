@@ -37,7 +37,7 @@ function Counter({ end, text }) {
 
     return (
         <div className="flex flex-col items-center p-6 rounded-lg shadow-md">
-            <div className="flex items-center justify-center w-24 h-24 bg-sky-800 text-white rounded-full mb-4">
+            <div className="flex items-center justify-center w-24 h-24 bg-blue-primary text-white rounded-full mb-4">
                 <h3 className="text-4xl font-bold">{count}</h3>
             </div>
             <p className="text-lg text-gray-700">{text}</p>
