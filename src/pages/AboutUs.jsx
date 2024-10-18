@@ -1,10 +1,10 @@
 import React from 'react';
-import missionImage from '../../assets/mission.jpg';
-import visionImage from '../../assets/vision.jpg';
-import teamImage from '../../assets/team.jpg';
-import Cover from '../Cover';
-import coverImage from '../../assets/img3.jpg';
-import AvatarCards from '../AvatarCards';
+import missionImage from '../assets/mission.jpg';
+import visionImage from '../assets/vision.jpg';
+import teamImage from '../assets/team.jpg';
+import Cover from '../components/Cover';
+import coverImage from '../assets/img3.jpg';
+import AvatarCards from '../components/AvatarCards';
 
 function AboutUs() {
 

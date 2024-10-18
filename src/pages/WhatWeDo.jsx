@@ -1,8 +1,8 @@
 import React from "react";
-import Cover from "../Cover";
-import coverImage from '../../assets/img3.jpg';
-import volunteerImage from '../../assets/volunteers.jpg';
-import officeImage from '../../assets/office.jpg';
+import Cover from "../components/Cover";
+import coverImage from '../assets/img3.jpg';
+import volunteerImage from '../assets/volunteers.jpg';
+import officeImage from '../assets/office.jpg';
 
 function WhatWeDo() {
     const programs = [

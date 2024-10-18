@@ -1,12 +1,12 @@
 import React from 'react';
-import VideoBox from '../VideoBox';
-import HeroCoverImg from '../../assets/herocover.png';
-import AboutUsImg from '../../assets/img4.png';
-import ProgramImg from '../../assets/volunteers.jpg';
-import Button from '../Button';
+import VideoBox from '../components/VideoBox';
+import HeroCoverImg from '../assets/herocover.png';
+import AboutUsImg from '../assets/img4.png';
+import ProgramImg from '../assets/volunteers.jpg';
+import Button from '../components/Button';
 import { Link } from 'react-router-dom';
-import AnimateCounters from '../AnimateCounters';
-import DonateForm from '../DonateForm';
+import AnimateCounters from '../components/AnimateCounters';
+import DonateForm from '../components/DonateForm';
 
 function Home() {
     const counters = [
