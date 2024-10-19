@@ -11,7 +11,7 @@ function Home() {
     const counters = [
         { end: 100, text: 'YD Workforce' },
         { end: 3, text: 'Countries Respresented' },
-        { end: 300, text: 'Outside Volunteers' }
+        { end: 40, text: 'Outside Volunteers' }
     ];
 
     const scrollToNextSection = () => {
