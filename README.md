@@ -1,4 +1,4 @@
-# Zomi Youth Development React + Vite
+# Zomi Youth Development
 
 This app is built with [React](https://react.dev/) and bundled with [Vite](https://vitejs.dev/).
 [Tailwind CSS](https://tailwindcss.com/) is used to add styling.
