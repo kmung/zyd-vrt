@@ -6,6 +6,11 @@ import Cover from '../components/Cover';
 import coverImage from '../assets/img3.jpg';
 import AvatarCards from '../components/AvatarCards';
 
+import marySiamIMG from '../assets/leaders/marySiam.jpg';
+import dalIMG from '../assets/leaders/dal.jpg';
+import siamNuIMG from '../assets/leaders/siamNu.jpg';
+import thomasMungIMG from '../assets/leaders/thomasMung.jpg';
+
 function AboutUs() {
 
   const missionPoints = [
@@ -19,26 +24,26 @@ function AboutUs() {
   ];
 
   const officeOfDirector = [
-    { name: 'John Doe', role: 'Executive Director', image: teamImage },
-    { name: 'Jane Smith', role: 'Assistant Director', image: teamImage },
-    { name: 'Jane Smith', role: 'Assistant Director', image: teamImage },
-    { name: 'Jane Smith', role: 'Assistant Director', image: teamImage },
-    { name: 'Sarah Davis', role: 'Committee Chair', image: teamImage },
+    { name: 'Mary Siam', role: 'Director', image: marySiamIMG }
+  ]
+
+  const assistantDirectors = [
+    { name: 'Dal', role: 'Assistant Director', image: dalIMG },
+    { name: 'Siam Nu', role: 'Assistant Director', image: siamNuIMG },
+    { name: 'Thomas Mung', role: 'Assistant Director', image: thomasMungIMG },
   ];
 
   const managementTeam = [
-    { name: 'Emily Johnson', role: 'Department Manager', image: teamImage },
-    { name: 'Emily Johnson', role: 'Department Manager', image: teamImage },
-    { name: 'Michael Brown', role: 'Team Manager', image: teamImage },
-    { name: 'Michael Brown', role: 'Team Manager', image: teamImage },
-    { name: 'Michael Brown', role: 'Team Manager', image: teamImage },
-    { name: 'Michael Brown', role: 'Team Manager', image: teamImage },
+    { name: 'Khai Boih', role: 'Education Department', image: teamImage },
+    { name: 'Thomas Mung', role: 'Training Department', image: teamImage },
+    { name: 'Juni Sawsawm', role: 'Research Department', image: teamImage },
+    { name: 'Mung No', role: 'Zomi Language & Literature', image: teamImage },
+    { name: 'Tung Pi', role: 'Creative Department', image: teamImage }
   ];
 
   const committees = [
-    { name: 'Sarah Davis', role: 'Committee Chair', image: teamImage },
-    { name: 'Sarah Davis', role: 'Committee Chair', image: teamImage },
-    { name: 'Sarah Davis', role: 'Committee Chair', image: teamImage },
+    { name: 'Niang Hoih', role: 'Finance', image: teamImage },
+    { name: 'Dal Thang', role: 'Human Resources', image: teamImage },
   ];
 
   return (
@@ -98,6 +103,7 @@ function AboutUs() {
           <h1 className="text-3xl font-bold mb-4 text-center">Our Leadership Team</h1>
           <p className="text-lg text-gray-700 mb-4">YD’s Leadership Team is comprised of the Office of the Director, a Management Team, and a Committee Chair. We also have an auxiliary branch which acts to provide additional support as needed. Together, our Leadership Team support and empower all members of YD to succeed in their activities.​</p>
           <AvatarCards title="Office of the Director" team={officeOfDirector} />
+          <AvatarCards team={assistantDirectors} />
           <AvatarCards title="Management Team" team={managementTeam} />
           <AvatarCards title="Committees" team={committees} />
         </div>
