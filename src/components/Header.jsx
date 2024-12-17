@@ -1,7 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 import logoNoBg from '../assets/yd_logo-removebg.png';
-import Button from './Button';
 
 function Header() {
     const [scrolled, setScrolled] = useState(false);

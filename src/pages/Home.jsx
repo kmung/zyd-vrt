@@ -26,7 +26,7 @@ function Home() {
 
     return (
         <>
-        <div className="relative z-10 bg-gray-900 text-white h-screen flex flex-col items-center justify-center bg-cover bg-center" style={{ backgroundImage: `url(${HeroCoverImg})`}}>
+        <div className="relative z-10 text-white h-screen flex flex-col items-center justify-center bg-cover bg-center" style={{ backgroundImage: `url(${HeroCoverImg})`}}>
             <div className="text-center max-w-2xl">
                 <h1 className="text-4xl font-bold mb-4">Welcome to Zomi YD</h1>
                 <h2 className="text-2xl mb-4">Zomi Picing | Siamsin Picing</h2>
